@@ -1,0 +1,2 @@
+# do not use hashbang!
+java --add-exports jdk.jconsole/sun.tools.jconsole=ALL-UNNAMED -jar /tools/jmxterm-1.0.2-uber.jar -l ${MAINAPP_PID} -n

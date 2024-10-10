@@ -1,0 +1,5 @@
+# do not use hashbang!
+echo 'run -b com.sun.management:type=HotSpotDiagnostic dumpHeap "/.bbugger/dump1.hprof" true' | java --add-exports jdk.jconsole/sun.tools.jconsole=ALL-UNNAMED -jar /tools/jmxterm-1.0.2-uber.jar -l ${MAINAPP_PID} -v silent -n
+
+echo "Run command locally to download the file:"
+echo "kubectl cp -c bbugger <POD-NAME>:/dump1.hprof dump1.hprof"
